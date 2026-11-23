@@ -83,11 +83,16 @@ Infrastructure details intentionally omit private IP addresses, hostnames, domai
 
 ## GitHub setup
 
-The repository is ready for a private GitHub repository. A remote is intentionally not configured.
+This repository is published at:
 
-```bash
-git remote add origin git@github.com:YOUR-USER/homelab-platform.git
-git push -u origin main
+```text
+https://github.com/GrantwDech/homelab-setup
 ```
 
-Replace `YOUR-USER` and the repository name before use.
+For future clones or contributions:
+
+```bash
+git clone https://github.com/GrantwDech/homelab-setup.git
+cd homelab-setup
+./scripts/scan-secrets.sh
+```
