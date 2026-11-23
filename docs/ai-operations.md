@@ -2,7 +2,7 @@
 
 ## Current stack
 
-- Ollama at `http://ollama:11434` inside Docker networks
+- Ollama is reached through an isolated container network
 - Open WebUI exposed through Docker port mapping
 - Models include Qwen 4B vision/tool model, Qwen 7B coder model, and Qwen 1.7B model
 - NVIDIA container support is configured

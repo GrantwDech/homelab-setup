@@ -1,28 +1,45 @@
 # Sanitized System Inventory
 
-## Host
+## Host profile
 
-| Item | Value |
+| Category | Specification |
 |---|---|
-| OS | Ubuntu 24.04.5 LTS |
-| Hostname | Device1 |
-| CPU | AMD Ryzen 5 5500, 12 threads |
-| Memory | 23 GB RAM |
-| GPU | NVIDIA GTX 1650 SUPER, 4 GB |
-| LAN | 10.0.0.90 |
-| Root disk | 116 GB, initially 93% full |
-| Media disk | 1.8 TB at `/mnt/oldmedia` |
+| Operating system | Ubuntu 24.04 LTS |
+| CPU | AMD Ryzen 5 5500, 12 logical threads |
+| Memory | 23 GB |
+| GPU | NVIDIA GeForce GTX 1650 SUPER, 4 GB |
+| Container platform | Docker Engine and Docker Compose |
+| Primary storage | 116 GB operating-system volume |
+| Media storage | 1.8 TB dedicated media volume |
 
-## Container groups
+Private mount paths, hostnames, IP addresses, interface names, and disk identifiers are omitted.
 
-| Group | Services |
+## Service groups
+
+| Functional group | Responsibilities |
 |---|---|
-| Media | Jellyfin, Jellyseerr, Komga |
-| Arr stack | Sonarr, Radarr, Prowlarr, NZBGet, Issuarr, Listenarr |
-| AI | Ollama, Open WebUI, MCPO Docker MCP |
-| Monitoring | Beszel, Beszel NVIDIA agent |
-| Security | Wazuh manager, indexer, dashboard |
-| Operations | Portainer, Sun Panel, HomeLabArr, HomeLable, Miner Sentinel |
-| Gaming | Minecraft server, Playit agent |
+| Media | Video streaming and comics delivery |
+| Discovery and metadata | Media discovery, metadata, requests, and indexing |
+| Download management | Downloading and library lifecycle automation |
+| AI platform | Local models, chat interface, tool integration |
+| Monitoring | Host, container, GPU, and service telemetry |
+| Security | Centralized log ingestion, event management, and dashboards |
+| Operations | Infrastructure management and custom homelab tooling |
+| Gaming | Minecraft hosting and remote access |
 
-Container names and published ports should be reviewed before making this repository public. This inventory intentionally avoids exact internal paths and exposed endpoints.
+## Containerized workloads
+
+- Jellyfin, Jellyseerr, Komga
+- Sonarr, Radarr, Prowlarr, NZBGet
+- Issuarr and Listenarr
+- Ollama and Open WebUI
+- Docker MCP proxy
+- Beszel and NVIDIA agent
+- Wazuh manager, indexer, and dashboard
+- Portainer
+- Sun Panel
+- HomeLabArr and HomeLable
+- Miner Sentinel
+- Minecraft server and Playit agent
+
+This document describes responsibility boundaries rather than publishing routable details.
