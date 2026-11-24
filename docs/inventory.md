@@ -42,4 +42,12 @@ Private mount paths, hostnames, IP addresses, interface names, and disk identifi
 - Miner Sentinel
 - Minecraft server and Playit agent
 
+## Storage and resilience
+
+- Separate operating-system and media volumes
+- Multiple media mounts and a compatibility bind mount
+- Root and application containers monitored for disk pressure
+- Read-only mount and container health automation
+- Recovery runbook for remounting media disks
+
 This document describes responsibility boundaries rather than publishing routable details.

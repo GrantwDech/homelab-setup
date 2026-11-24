@@ -80,6 +80,7 @@ Infrastructure details intentionally omit private IP addresses, hostnames, domai
 | [Backup and recovery](docs/backup-recovery.md) | Restoration and verification procedures |
 | [AI operations](docs/ai-operations.md) | Local model and assistant operations |
 | [Security](docs/security.md) | Secret and credential handling |
+| [Operations runbook](docs/operations.md) | Mount, disk, container, and recovery procedures |
 
 ## GitHub setup
 
