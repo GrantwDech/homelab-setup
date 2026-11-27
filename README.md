@@ -16,8 +16,8 @@ This repository presents the homelab as an infrastructure project: architecture,
 | Area | Implementation |
 |---|---|
 | Operating system | Ubuntu Server/Desktop 24.04 LTS |
-| Compute | AMD Ryzen 5 5500, 12 logical CPUs |
-| Memory | 23 GB RAM |
+| Compute | AMD Ryzen 5 5500 CPU |
+| Memory | 24 GB RAM |
 | GPU | NVIDIA GeForce GTX 1650 SUPER, 4 GB |
 | Containers | Docker Engine and Docker Compose |
 | Media | Jellyfin, Jellyseerr, Komga |
